@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="masonry-grid.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script type="text/javascript"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johny's masonry Grid</title>
+</head>
+<body>
+    <div class="test-wrapper" style="max-width: 1400px; margin: 0 auto;">
+        <!-- Masonry Grid START -->
+        <div class="masonry-wrapper page-location"> 
+            <div class="masonry-text-wrap">
+                <h1 class="masonry-title">Responsive Masonry Grid</h1>
+                <p class="masonry-comment">with jQuery</p>
+            </div>
+            <div class="masonry-grid"></div>
+            <div class="masonry-lightbox is-hidden">
+                <div class="masonry-lightbox-bg"></div>
+                <img class="masonry-lightbox-ui masonry-lightbox-ui-img" src="images/2.jpg">
+                <div class="masonry-lightbox-ui masonry-lightbox-ui-interface">
+                    <div class="masonry-lightbox-ui-arrow masonry-lightbox-ui-arrow-right"></div>
+                    <div class="masonry-lightbox-ui-arrow masonry-lightbox-ui-arrow-left"></div>
+                    <p class="masonry-lightbox-ui-num">
+                        <span class="masonry-lightbox-ui-num-now">1</span>
+                        of
+                        <span class="masonry-lightbox-ui-num-max">10</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Masonry Grid END -->
+    </div>
+    <script src="masonry-grid.js"></script>
+</body>
+</html>

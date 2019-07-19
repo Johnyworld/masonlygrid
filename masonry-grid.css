@@ -1,0 +1,152 @@
+html, body, div, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111;
+}
+
+.masonry-grid {
+    position: relative;
+}
+
+.masonry-text-wrap {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.masonry-title {
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+.masonry-comment {
+    color: #0182e9;
+}
+
+.grid-item {
+    float: left;
+    box-sizing: border-box;
+    position: absolute;
+    font-size: 0;
+    cursor: pointer;
+    /* transition: .5s; */
+}
+
+.grid-item-hover {
+    padding: 30px;
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.92);
+    opacity: 0;
+    transition: .5s;
+}
+
+.grid-item:hover .grid-item-hover {
+    opacity: 1;
+}
+
+.grid-item-title {
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+
+.grid-item-remark {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.grid-item-category {
+    font-size: 13px;
+    color: #888;
+    position: absolute;
+    bottom: 30px;
+}
+
+.masonry-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .5s;
+    opacity: 0;
+}
+
+.masonry-lightbox.is-hidden {
+    display: none;
+}
+
+.masonry-lightbox-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .9);
+    cursor: url(images/arrow-x.png) 35 35, auto;
+}
+
+.masonry-lightbox-ui {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.masonry-lightbox-ui-arrow {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s;
+    background-image: url(images/arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.masonry-lightbox-ui-arrow:hover {
+    opacity: .5;
+}
+
+.masonry-lightbox-ui-arrow-left {
+    left: 0px;
+}
+
+.masonry-lightbox-ui-arrow-right {
+    right: 0px;
+    background-image: url(images/arrow-right.png);
+    background-position: center right;
+}
+
+.masonry-lightbox-ui-num {
+    color: #fff;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    opacity: .3;
+}
+
+@media screen and ( max-width: 768px ) {
+    .masonry-title {
+        font-size: 30px;
+    }
+}
